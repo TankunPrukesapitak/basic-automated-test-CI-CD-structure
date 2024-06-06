@@ -1,0 +1,29 @@
+trigger:
+  branches:
+    include:
+      - main
+pr: none
+
+stages:
+- stage: Build_Deploy
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+  pool: 
+    vmImage: ubuntu-2022
+  jobs:
+  - job: Deploy_UAT
+    steps:
+
+
+- stage: integration_test_cypress
+  dependsOn: Build_Deploy
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+  pool: 
+    vmImage: ubuntu-2022
+  jobs:
+  - job: Increase_efficiency
+    steps:
+
+
+      
+
+

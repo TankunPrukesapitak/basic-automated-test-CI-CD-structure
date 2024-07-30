@@ -1,7 +1,7 @@
-import * as locator from './locator';
-import * as data from './en';
+import {locator} from './locator';
+import {data} from './en';
 import * as API from '../keyword/API';
 import * as authentication from '../keyword/keyword_login'
 
 
-export { locator, data, authentication,};
+export { locator, data, authentication};

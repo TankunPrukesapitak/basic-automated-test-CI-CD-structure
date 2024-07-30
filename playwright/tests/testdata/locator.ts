@@ -1,3 +1,5 @@
-export const username_textfiled = '#username';
-export const password_textfield = '#password';
-export const submit_login = '#submit';
+export const locator = {
+    username_textfiled: '#username',
+    password_textfield: '#password',
+    submit_login: '#submit',
+}
